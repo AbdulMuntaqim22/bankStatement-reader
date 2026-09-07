@@ -1,11 +1,14 @@
 {
-  "name": "bstatement_reader",
+  "name": "bankStatement-reader",
+  "homepage": "https://abdulmuntaqim22.github.io/bankStatement-reader/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
@@ -14,6 +17,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "typescript": "~6.0.2",
     "vite": "^8.2.2",
     "vitest": "^5.0.0"
